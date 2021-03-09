@@ -8,6 +8,7 @@ const buildAbout = () => {
 
     // Classes
     aboutHolder.classList.add('about-holder');
+    aboutHolder.classList.add('container');
     hoursHolder.classList.add('hours');
     contactHolder.classList.add('contact');
 

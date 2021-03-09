@@ -9,12 +9,12 @@ import {buildAbout} from './modules/contact'
 
 // buildAbout();
 
-// document.onload = buildHome();
+document.onload = buildHome();
 
 const homeButton = document.querySelector('#homeButton');
 const menuButton = document.querySelector('#menuButton');
 const aboutButton = document.querySelector('#aboutButton');
-const content = document.querySelector('.content');
+const content = document.querySelector('#content');
 
 homeButton.addEventListener('click', () => {
     content.innerHTML = '';

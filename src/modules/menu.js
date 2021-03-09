@@ -11,6 +11,7 @@ const buildMenu = () => {
     headerOne.textContent = 'Menu';
 
     menuHolder.classList.add('menu-holder');
+    menuHolder.classList.add('container');
     foodHolder.classList.add('food-holder');
     // itemHolder.classList.add('item-holder');
 

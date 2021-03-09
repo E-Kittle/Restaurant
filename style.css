@@ -34,6 +34,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    height: 20%;
 }
 
 
@@ -54,15 +55,14 @@ button:hover{
 
 /* Basic layout */
 #content{
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-/* HomePage - Intro area */
-.intro-container{
+/* Basic background layer */
+.container{
     z-index: 1; 
     position: relative;
     display: block;
@@ -70,7 +70,7 @@ button:hover{
     width: 60%;
 }
 
-.intro-container:after{
+.container:after{
     background-color: black;
     position: absolute;
     opacity: .7;
@@ -79,6 +79,27 @@ button:hover{
     top: 0;
     height: 100%;
     width: 100%;
+}
+
+
+/* HomePage - Intro area */
+.intro-container{
+    /* z-index: 1; 
+    position: relative;
+    display: block;
+    height: 600px;
+    width: 60%; */
+}
+
+.intro-container:after{
+    /* background-color: black;
+    position: absolute;
+    opacity: .7;
+    z-index: -1;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%; */
 }
 
 .intro-container h1{

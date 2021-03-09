@@ -6,6 +6,8 @@
         //Create the container
         const container = document.createElement('div');
         container.classList.add('intro-container');
+        container.classList.add('container');
+
 
         //Create the p and h1 element
         const header = document.createElement('h1')
