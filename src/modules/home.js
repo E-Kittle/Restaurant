@@ -19,14 +19,9 @@
         container.appendChild(para);
     };
 
-    const attempt = (str) => {
-        console.log('home worked: ' + str);
-    };
-
-
 
 
 
 
     
-export {buildHome, attempt};
+export {buildHome};
