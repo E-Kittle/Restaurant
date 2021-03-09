@@ -1,16 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* height: 100%; */
 }
 
 body{
     background-image: url("images/resBack.jpg");
     background-repeat: none;
     background-size: cover;
+    color: white;
+}
+
+html body{
+    height: 100vh;
+}
+
+#content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* HomePage - Intro area */
+#intro-container{
+    
+    z-index: 1; 
+    position: relative;
+    display: block;
+    height: 80%;
+    width: 60%;
+}
+
+#intro-container:after{
+    background-color: black;
+    position: absolute;
+    opacity: .6;
+    z-index: -1;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 h1{
     text-align: center;
-    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    margin: 20px;
+    padding-top: 200px;
 }
+
+p{
+    text-align: center;
+    margin: 30px;
+    padding: 0 150px;
+}
+
+/* End of styles for homepage */
