@@ -18,6 +18,12 @@ html body{
     height: 100vh;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+}
+
 #content{
     height: 100%;
     display: flex;
@@ -28,19 +34,18 @@ html body{
 
 
 /* HomePage - Intro area */
-#intro-container{
-    
+.intro-container{
     z-index: 1; 
     position: relative;
     display: block;
-    height: 80%;
+    height: 600px;
     width: 60%;
 }
 
-#intro-container:after{
+.intro-container:after{
     background-color: black;
     position: absolute;
-    opacity: .6;
+    opacity: .7;
     z-index: -1;
     content: '';
     top: 0;
@@ -48,18 +53,55 @@ html body{
     width: 100%;
 }
 
-h1{
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    font-size: 80px;
+.intro-container h1{
     margin: 20px;
     padding-top: 200px;
 }
 
-p{
+.intro-container p{
     text-align: center;
     margin: 30px;
     padding: 0 150px;
 }
 
 /* End of styles for homepage */
+
+
+/* Start of styles for menu items */
+.menu-holder{
+    z-index: 1; 
+    position: relative;
+    display: block;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.menu-holder:after{
+    background-color: black;
+    position: absolute;
+    opacity: .7;
+    z-index: -1;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.food-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-holder{
+    width: 400px;
+    margin: 50px;
+    text-align: center;
+}
+
+.item-holder h2 {
+    margin-bottom: 10px;
+}
+
+
+/* End of styles for menu items */
