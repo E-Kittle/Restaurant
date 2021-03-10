@@ -6,7 +6,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* height: 100%; */
 }
 
 body{
@@ -18,12 +17,18 @@ body{
 
 html body{
     height: 100vh;
+    font-family: Helvetica, sans-serif, Candara;
+
 }
 
-h1{
+h1, h2{
     text-align: center;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive, Arial, Helvetica, sans-serif;
     font-size: 80px;
+}
+
+h2 {
+    font-size: 35px;
 }
 
 
@@ -33,8 +38,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    height: 20%;
+    min-height: 75px;
+    padding-top: 20px;
 }
 
 
@@ -55,7 +60,6 @@ button:hover{
 
 /* Basic layout */
 #content{
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,14 +70,15 @@ button:hover{
     z-index: 1; 
     position: relative;
     display: block;
-    height: 600px;
+    margin-top: 30px;
+    min-height: 700px;
     width: 60%;
 }
 
 .container:after{
     background-color: black;
     position: absolute;
-    opacity: .7;
+    opacity: .8;
     z-index: -1;
     content: '';
     top: 0;
@@ -83,28 +88,12 @@ button:hover{
 
 
 /* HomePage - Intro area */
-.intro-container{
-    /* z-index: 1; 
-    position: relative;
-    display: block;
-    height: 600px;
-    width: 60%; */
-}
 
-.intro-container:after{
-    /* background-color: black;
-    position: absolute;
-    opacity: .7;
-    z-index: -1;
-    content: '';
-    top: 0;
-    height: 100%;
-    width: 100%; */
-}
 
 .intro-container h1{
     margin: 20px;
-    padding-top: 200px;
+    padding-top: 100px;
+    padding-bottom: 90px;
 }
 
 .intro-container p{
@@ -117,24 +106,6 @@ button:hover{
 
 
 /* Start of styles for menu items */
-.menu-holder{
-    z-index: 1; 
-    position: relative;
-    display: block;
-    width: 60%;
-    margin-top: 100px;
-}
-
-.menu-holder:after{
-    background-color: black;
-    position: absolute;
-    opacity: .7;
-    z-index: -1;
-    content: '';
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
 
 .food-holder{
     display: flex;
@@ -151,41 +122,24 @@ button:hover{
 .item-holder h2 {
     margin-bottom: 10px;
 }
-
-
 /* End of styles for menu items */
 
-/* Styles for about us */
-.about-holder{
-    z-index: 1; 
-    position: relative;
-    display: block;
-    width: 60%;
-    margin-top: 50px;
-    padding-top: 50px;
-    line-height: 1.5em;
-}
 
-.about-holder:after{
-    background-color: black;
-    position: absolute;
-    opacity: .7;
-    z-index: -1;
-    content: '';
-    top: 0;
-    height: 100%;
-    width: 100%;
+/* Styles for about us */
+
+.about-holder h1{
+    margin: 20px;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 .hours{
-    padding-top: 150px;
     text-align: center;
 }
 
 .contact{
+    padding-top: 50px;
     text-align: center;
-    padding-top: 100px;
-    margin-bottom: 100px;
 }
 
 .about-holder h2{

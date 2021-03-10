@@ -1,4 +1,6 @@
 
+
+// This function builds an about page for a restaurant with simple manipulation of the DOM
 const buildAbout = () => {
     // Containers
     const content = document.querySelector('#content');
@@ -12,7 +14,7 @@ const buildAbout = () => {
     hoursHolder.classList.add('hours');
     contactHolder.classList.add('contact');
 
-    // Elements
+    // Text elements such as titles, hours, phone number, and address
     const title = document.createElement('h1');
     title.textContent = "About";
 
@@ -38,14 +40,16 @@ const buildAbout = () => {
     aboutHolder.appendChild(title);
     aboutHolder.appendChild(hoursHolder);
     aboutHolder.appendChild(contactHolder);
+    hoursHolder.appendChild(hoursTitle);
     hoursHolder.appendChild(sunthur);
     hoursHolder.appendChild(frisat);
+    contactHolder.appendChild(contactTitle);
     contactHolder.appendChild(phone);
     contactHolder.appendChild(address);
 }
 
 
-    
+    // Export building function for use in index.js
 export {buildAbout};
 
 
